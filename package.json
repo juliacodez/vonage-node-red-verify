@@ -1,0 +1,21 @@
+{
+  "name": "@vonage/node-red-verify",
+  "version": "1.0.0",
+  "description": "Node-RED module for the Vonage Verify API. The Verify API lets you send a PIN to a user's phone and validate that they received it. ",
+  "main": "verify.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "node-red": {
+    "nodes": {
+      "verify": "verify.js"
+    }
+  },
+  "dependencies": {
+    "@vonage/node-red-basicauth": "github:juliacodez/vonage-node-red-basicauth",
+    "@vonage/server-sdk": "^2.10.7",
+    "mustache": "^4.1.0"
+  }
+}
